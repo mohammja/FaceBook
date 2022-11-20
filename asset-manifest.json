@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FaceBook/static/css/main.c2bc8b82.css",
+    "main.js": "/FaceBook/static/js/main.2b3190d2.js",
+    "index.html": "/FaceBook/index.html",
+    "main.c2bc8b82.css.map": "/FaceBook/static/css/main.c2bc8b82.css.map",
+    "main.2b3190d2.js.map": "/FaceBook/static/js/main.2b3190d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2bc8b82.css",
+    "static/js/main.2b3190d2.js"
+  ]
+}
