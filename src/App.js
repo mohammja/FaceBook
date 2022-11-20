@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import profiles from './berlin.json';
+console.log(profiles);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FaceBook/>
+    </>
   );
 }
+
+const FaceBook = (props) =>{
+  return(
+    <>
+    {profiles.map(profile=>
+    <section className='parent'>
+      <img src={profile.img} alt="portrait"></img>
+      <p className='firstName'><strong>First name: </strong>{profile.firstName}</p>
+      <p className='lastName'><strong>Last name: </strong>{profile.lastName}</p>
+      <p className='country'><strong>Country: </strong>{profile.country}</p>
+      <p className='type'><strong>Type: </strong>{profile.isStudent ? "Student" : "Teacher"}</p>
+
+    </section>
+    )}
+    </>
+  )
+}
+
 
 export default App;
